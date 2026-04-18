@@ -28,7 +28,7 @@ public class FilmController {
     public Film create(@Valid @RequestBody Film film) {
         film.setId(getNextId());
         films.put(film.getId(), film);
-        log.debug("Фильм {} добавлен, айди фильма{}", film.getName(), film.getId());
+        log.debug("200");
         return film;
     }
 
